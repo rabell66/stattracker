@@ -23,10 +23,14 @@ var userSchema = new Schema({
     default: "basic"
   },
   activities:[{
+
       name:{ type: String, required:true},
       statname:{ type: String, required:true},
-      tracking:{ statentry: Number, type: String}
+      tracking:[{ statentry: Number, type: String }],
+      updatedAt: [{type: String, required:true}],
+
     }],
+    
    
 });
 
